@@ -7,7 +7,7 @@ export class Database {
   private missions: Mission[] = [];
   private members: Member[] = [];
   private leaders: Leader[] = [];
-  private users: User[] = []; // เพิ่ม User storage
+  private users: User[] = []; 
 
   // ===== Mission =====
   saveMission(mission: Mission): void {

@@ -10,18 +10,18 @@ export class Mission {
     Finished: "finished"
   } as const;
   
-  private members: Member[] = [];
   private _status: string = Mission.STATUS.NotStarted;
   
   get status(): string {
     return this._status;
   }
-
+  
   constructor(
     public id: number,
     public name: string,
     public leader: Leader
   ) {}
+  private members: Member[] = [];
 
   getMembers(): Member[] {
     return this.members;
