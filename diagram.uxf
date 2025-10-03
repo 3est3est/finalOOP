@@ -1,0 +1,56 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>784</x><y>152</y><w>232</w><h>168</h></coordinates><panel_attributes>Mission
+--
++ id: number
++ name: string
++ leader: Leader
+- members: Member[]
+- status: 'not_started' | 'in_progress' | 'finished'
+- status: MissionStatus
+--
++ getMembers(): Member[]
++ startMission(): void
++ finishMission(): void
++ addMember(member: Member): void
++ removeMember(member: Member): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>168</x><y>360</y><w>216</w><h>240</h></coordinates><panel_attributes>Database
+--
+- missions: Mission[]
+- members: Member[]
+- leaders: Leader[] = []
+- users: User[] = []
+--
++ getUsers(): User[]
++ saveUser(user: User): void 
++ getLeaders(): Leader[]
++ saveLeader(leader: Leader): void
++ getMissions(): Mission[] 
++ saveMission(mission: Mission): void
++ getMembers(): Member[]
++ saveMember(member: Member): void
++ deleteMission(id: number): void
++ updateMission(mission: Mission) void
++ fetchUser(id: number): User | null
++ fetchLeader(id: number): Leader | null
++ fetchMember(id: number): Member | null
++ fetchMission(id: number): Mission | null</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>192</x><y>216</y><w>136</w><h>56</h></coordinates><panel_attributes>User
+--
+id: number
+name: string
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>456</x><y>160</y><w>200</w><h>56</h></coordinates><panel_attributes>Leader
+--
++ startMission(mission: Mission): string
++ endMission(mission: Mission): string
++ announceMission(mission: Mission): string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>456</x><y>256</y><w>200</w><h>56</h></coordinates><panel_attributes>Member
+--
++ joinMission(mission: Mission): void
++ leaveMissionMission(mission: Mission): void
++ Inactive(): void 
++ Active(): void 
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>72</y><w>152</w><h>88</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+MemberStatus
+--
+Joined = "joined"
+Left = "left"
+Active = "active"
+Inactive = ''inactive'</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>248</x><y>264</y><w>24</w><h>112</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>184</y><w>152</w><h>48</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;40;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>264</y><w>152</w><h>32</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;170;20</additional_attributes></element><element><id>Relation</id><coordinates><x>648</x><y>184</y><w>152</w><h>24</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>170;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>648</x><y>280</y><w>152</w><h>24</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>170;10;10;10</additional_attributes></element></diagram>
