@@ -1,4 +1,4 @@
-<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>636</x><y>160</y><w>232</w><h>168</h></coordinates><panel_attributes>Mission
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>592</x><y>188</y><w>232</w><h>168</h></coordinates><panel_attributes>Mission
 --
 + id: number
 + name: string
@@ -11,26 +11,26 @@
 + startMission(): void
 + finishMission(): void
 + addMember(member: Member): void
-+ removeMember(member: Member): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>44</x><y>224</y><w>136</w><h>56</h></coordinates><panel_attributes>User
++ removeMember(member: Member): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>252</y><w>136</w><h>56</h></coordinates><panel_attributes>User
 --
 id: number
 name: string
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>308</x><y>168</y><w>200</w><h>56</h></coordinates><panel_attributes>Leader
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>264</x><y>196</y><w>200</w><h>56</h></coordinates><panel_attributes>Leader
 --
 + startMission(mission: Mission): string
 + endMission(mission: Mission): string
-+ announceMission(mission: Mission): string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>308</x><y>264</y><w>200</w><h>56</h></coordinates><panel_attributes>Member
++ announceMission(mission: Mission): string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>264</x><y>292</y><w>200</w><h>56</h></coordinates><panel_attributes>Member
 --
 + joinMission(mission: Mission): void
 + leaveMissionMission(mission: Mission): void
 + Inactive(): void 
 + Active(): void 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>52</x><y>80</y><w>152</w><h>88</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>8</x><y>108</y><w>152</w><h>88</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
 MemberStatus
 --
 Joined = "joined"
 Left = "left"
 Active = "active"
-Inactive = ''inactive'</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>172</x><y>192</y><w>152</w><h>48</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;40;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>172</x><y>272</y><w>152</w><h>32</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;170;20</additional_attributes></element><element><id>Relation</id><coordinates><x>500</x><y>192</y><w>152</w><h>24</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>170;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>500</x><y>288</y><w>152</w><h>24</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>170;10;10;10</additional_attributes></element></diagram>
+Inactive = ''inactive'</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>128</x><y>220</y><w>152</w><h>48</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;40;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>128</x><y>300</y><w>152</w><h>32</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;170;20</additional_attributes></element><element><id>Relation</id><coordinates><x>456</x><y>220</y><w>152</w><h>24</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>170;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>456</x><y>316</y><w>152</w><h>24</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>170;10;10;10</additional_attributes></element></diagram>
